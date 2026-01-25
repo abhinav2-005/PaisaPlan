@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #f4f6f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .h2{
+            text-align: center;
+        }
+        .card{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
+            padding: 30px;
+            width: 320px;
+        }
+        .Email{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .name{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .password{
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .signup_button{
+            width: 100%;
+            background-color: #2ecc71;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+        }
+        .signup_button:hover{
+            cursor: pointer;
+            background-color: #27ae60;
+        }
+        .signup_button:active{
+            cursor: pointer;
+            background-color: #67e39b;
+        }
+        .link{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login{
+            color: #2ecc71;
+        }
+    </style>
+    <div class="card">
+        <h2 class="h2">Create Account</h2>
+        <input type="email" class="Email" placeholder="Enter your Email" required>
+        <input type="text" class="name" placeholder="Enter Your name" required>
+        <input type="password" class="password" placeholder="Create a strong password" required>
+        <input type="password" class="password" placeholder="Re-enter your password" required>
+        <button class="signup_button">SignUp</button>
+
+        <div class="link">
+                Already have an account? <a href="login.html" class="login" id = "login">Login</a>
+        </div>
+    </div>
+</body>
+</html>

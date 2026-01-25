@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaisaPlan | Login</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #fff;
+            width: 320px;
+        }
+        .email{
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%
+        }
+        .password{
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%
+        }
+        .submit_button{
+            position: relative;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #2ecc71;
+            
+        }
+        .link{
+            text-align: center;
+        }
+        .text{
+            text-align: center;
+        }
+        .submit_button:hover{
+            cursor: pointer;
+            background-color: #27ae60;
+        }
+        .submit_button:active{
+            cursor: pointer;
+            background-color: #60de94;
+        }
+    </style>
+        <div class="card">
+            <h2 class="text">Login</h2>
+            <input type="text" placeholder="Enter Your Email Id" class="email" required>
+            <input type="password" placeholder="Enter Your password" class="password">
+            <button class="submit_button">Login</button>
+        
+            <div class="link">
+                Don't have an account?  <a href="signup.html" style="color: #2ecc71;">signup</a>
+            </div>
+        </div>
+</body>
+</html>
