@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaisaPlan | Home</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f6f8;
+            justify-content: center;
+            align-items: center;
+        }
+        .salary_div{
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            background-color: #fff;
+            align-items: center;
+        }
+        .monthly_salary{
+            height: 45px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            margin-left: 70%;
+        }
+        .cards{
+            display: flex;
+            align-items:center;
+            margin-top: 20px;
+            gap: 50px;
+            width: 75%;
+        }
+        .needs_div{
+            background-color: #fff;
+            height: 300px;
+            width: 450px;
+            border-radius: 10px;
+            
+        }
+        .wants_div{
+            background-color: #fff;
+            height: 300px;
+            width: 450px;
+            border-radius: 10px;
+            
+        }
+        .investments_div{
+            background-color: #fff;
+            height: 300px;
+            width: 450px;
+            border-radius: 10px;
+
+        }
+        .needs_title{
+            display: flex;
+            align-items: center;
+            background-color:#2ecc71;
+            border-radius: 10px;
+            height: 50px;
+        }
+        .add_needs{
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-left: 65%;
+            border-radius: 10px;
+            height: 30px;
+        }
+        .add_needs:hover{
+            background-color: #f4f6f8;
+            cursor: pointer;
+        }
+        .add_needs:active{
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .status_div{
+            width: 75%;
+            background-color: #fff;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .spend_amt{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
+    <h1>Monthly Budget</h1>
+
+    <div class="salary_div">
+        <h3 style="margin-left: 10px;">Monthly Income ₹</h3>
+        <input type="number" class="monthly_salary" placeholder="Enter your Monthly salary">
+    </div>
+
+    <!-- cards div -->
+    <div class="cards">
+        <div class="needs_div">
+            <div class="needs_title">
+                <h2 style="margin-left: 10px;">Needs</h2>
+                <button class="add_needs">ADD</button>
+            </div>
+        </div>
+        <div class="wants_div">
+            <div class="needs_title">
+                <h2 style="margin-left: 10px;">Wants</h2>
+                <button class="add_needs">ADD</button>
+            </div>
+        </div>
+        <div class="investments_div">
+            <div class="needs_title">
+                <h2 style="margin-left: 10px;">Investments</h2>
+                <button class="add_needs" style="margin-left: 48%;">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- final div -->
+     <div class="status_div">
+        <div class="spend_amt">
+            <h2>Total Spent: ₹</h2>
+            <input type="text" placeholder="Spent" style="height: 25px; margin-left: 10px;">
+        </div>
+        <div class="spend_amt">
+            <h2>Remaining: ₹</h2>
+            <input type="text" placeholder="Amount left" style="height: 25px; margin-left: 10px;">
+        </div>
+     </div>
+</body>
+</html>
